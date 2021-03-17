@@ -14,6 +14,13 @@ This repo contains sub modules which helped me understand compilers better.
 
 #### CK(Codekrypt) Compiler
 This compiler was developed ground up as a part of learning. This is adapted from `ANLR Examples` module.
+```text
+1. Lexical Analysis [Done]
+2. Parsing [Done]
+3. Semantic Analyser [TODO]
+4. Optimization [Optional]
+5. Code Generation [TODO]
+```
 
 ### Parser Examples
 
