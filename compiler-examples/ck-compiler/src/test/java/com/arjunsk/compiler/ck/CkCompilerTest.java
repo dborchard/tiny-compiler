@@ -12,7 +12,7 @@ import org.junit.Test;
 public class CkCompilerTest {
 
   @Test
-  public void execute() {
+  public void compile() {
     // 1. Input Code
     final String sourceCode = FileReaderUtil.getResourceFileAsString("input/CgSample.ck");
 

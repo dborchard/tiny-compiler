@@ -15,6 +15,7 @@ import com.arjunsk.compiler.ck.domain.tree.nodes.grammer.impl.LetContext;
 import com.arjunsk.compiler.ck.domain.tree.nodes.grammer.impl.ProgramContext;
 import com.arjunsk.compiler.ck.domain.tree.nodes.grammer.impl.ShowContext;
 import com.arjunsk.compiler.ck.visitor.SimplerLangBaseVisitor;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.util.HashMap;
 import java.util.Map;
@@ -81,7 +82,7 @@ public class CodeGeneratorVisitor extends SimplerLangBaseVisitor<Void> {
     classWriter.visitEnd();
 
     byte[] code = classWriter.toByteArray();
-    writeToFile(code, "CgSample.class");
+    writeToFile(code, "output/CgSample.class");
 
     return null;
   }
@@ -160,6 +161,10 @@ public class CodeGeneratorVisitor extends SimplerLangBaseVisitor<Void> {
    * @param filePath File Path to write. Eg:- "Example.class"
    */
   private void writeToFile(byte[] code, String filePath) {
+
+    File file = new File(filePath);
+    file.getParentFile().mkdirs();
+
     try (FileOutputStream fos = new FileOutputStream(filePath)) {
       fos.write(code);
     } catch (Exception ex) {
