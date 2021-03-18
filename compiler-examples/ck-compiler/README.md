@@ -16,6 +16,7 @@ post ["Build your own programming language with ANTLR"](https://shalithasuranga.
 4. Implemented `CodeGeneration` using `Java ASM`.
 
 ### TODO
+* Implement Semantic Analyser.
 * Implement custom filename.
 * ~~Implement Parse Tree.~~
 * ~~Implement Visitor Pattern.~~
