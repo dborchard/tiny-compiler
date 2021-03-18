@@ -17,6 +17,8 @@ Output:
   NUMBER 100
 
 */
+
+/** Convert Input Code to Token's. */
 public final class Lexer {
 
   private Lexer() {}

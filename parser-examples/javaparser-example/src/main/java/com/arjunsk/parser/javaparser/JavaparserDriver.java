@@ -17,6 +17,10 @@ public class JavaparserDriver {
     parse(code);
   }
 
+  /**
+   * Identify all Statements and see if it is an IfStatement. If yes, print the content of Statement
+   * Object.
+   */
   private static void parse(String code) {
     CompilationUnit cu = StaticJavaParser.parse(code);
 
@@ -29,6 +33,7 @@ public class JavaparserDriver {
             });
   }
 
+  /** Read String from File. */
   public static String getResourceFileAsString(String fileName) {
     ClassLoader classLoader = ClassLoader.getSystemClassLoader();
     try (InputStream is = classLoader.getResourceAsStream(fileName)) {

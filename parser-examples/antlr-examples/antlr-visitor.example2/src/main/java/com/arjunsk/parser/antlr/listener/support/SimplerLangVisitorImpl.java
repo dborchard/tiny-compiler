@@ -6,6 +6,7 @@ import com.arjunsk.parser.antlr.SimplerLangParser.ShowContext;
 import java.util.HashMap;
 import java.util.Map;
 
+/** Logic for handling LET and SHOW. */
 public class SimplerLangVisitorImpl extends SimplerLangBaseVisitor<Void> {
 
   private final Map<String, Integer> variableMap;

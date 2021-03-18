@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/** Input AST. */
 public class AstNode {
 
-  private final String type;
+  private final String type; // CallExpression or NumberLiteral or StringLiteral
 
-  private final String value;
+  private final String value; // Node Value
 
   private final List<AstNode> params;
 

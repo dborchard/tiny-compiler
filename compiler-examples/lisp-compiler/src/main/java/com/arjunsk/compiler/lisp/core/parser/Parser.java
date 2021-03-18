@@ -29,13 +29,14 @@ public class Parser {
   private AstNode walk() {
     Token token = tokens.get(current);
 
-    if (token.getType() == TokenType.NUMBER) {
+    if (token.getType() == TokenType.NUMBER) { // 1. Number
       current++;
       return new AstNode("NumberLiteral", token.getValue());
-    } else if (token.getType() == TokenType.STRING) {
+    } else if (token.getType() == TokenType.STRING) { // 2. Variable Name
       current++;
       return new AstNode("StringLiteral", token.getValue());
-    } else if (token.getType() == TokenType.PAREN && token.getValue().equals("(")) {
+    } else if (token.getType() == TokenType.PAREN
+        && token.getValue().equals("(")) { // 3. Expression
 
       token = tokens.get(++current);
       final String expressionName = token.getValue();

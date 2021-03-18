@@ -2,12 +2,14 @@ package com.arjunsk.compiler.svg.core.generation;
 
 import com.arjunsk.compiler.svg.domain.transformer.ast.SvgAstNode;
 
+/** Convert to SVG based on Transformed AST. */
 public class CodeGenerator {
 
   public String generate(SvgAstNode node) {
     return printAst(node);
   }
 
+  /** using recursion to process transformed AST. */
   private String printAst(SvgAstNode root) {
 
     if (root == null) return "";

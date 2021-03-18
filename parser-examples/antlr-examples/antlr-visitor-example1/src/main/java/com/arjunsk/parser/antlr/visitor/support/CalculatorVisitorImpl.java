@@ -3,6 +3,7 @@ package com.arjunsk.parser.antlr.visitor.support;
 import com.arjunsk.parser.antlr.CalculatorBaseVisitor;
 import com.arjunsk.parser.antlr.CalculatorParser;
 
+/** Logic for handling NUMERIC Operations. */
 public class CalculatorVisitorImpl extends CalculatorBaseVisitor<Double> {
 
   @Override

@@ -9,6 +9,7 @@ import org.eclipse.jdt.core.dom.IfStatement;
 import org.eclipse.jdt.core.dom.SimpleName;
 import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 
+/** Visitor for all Java Grammar Semantics. */
 public class JdtAstVisitor extends ASTVisitor {
 
   private final Set<String> names;
@@ -38,7 +39,7 @@ public class JdtAstVisitor extends ASTVisitor {
 
   public boolean visit(ForStatement node) {
     System.out.println("ForStatement -- content:\n" + node.toString());
-    return false;
+    return false; // if true, will iterate Visitor to it child node as well.
   }
 
   public boolean visit(IfStatement node) {

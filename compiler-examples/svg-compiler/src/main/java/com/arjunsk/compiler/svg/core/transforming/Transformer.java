@@ -6,6 +6,7 @@ import com.arjunsk.compiler.svg.domain.transformer.ast.SvgAstNode;
 import com.arjunsk.compiler.svg.exceptions.TransformerException;
 import java.util.Iterator;
 
+/** Transform the AST to SVG AST. */
 public class Transformer {
 
   public SvgAstNode transform(AstNode oldAst) {
