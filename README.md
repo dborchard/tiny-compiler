@@ -21,7 +21,7 @@ This compiler was developed ground up as a part of learning. This is adapted fro
 4. Optimization [Optional]
 5. Code Generation [Done]
 ```
-1. [ASM Code Generation](https://github.com/arjunsk/java-bytecode) 
+1. [ASM Code Generation](https://github.com/arjunsk/java-bytecode/tree/master/java-asm/ow2-asm-example/src/main/java/com/arjunsk/asm/asmifier) 
 
 ### Parser Examples
 
