@@ -14,7 +14,7 @@ This repo contains sub modules which helped me understand compilers better.
 
 #### CK(Codekrypt) Compiler
 This compiler was developed ground up as a part of learning. This is adapted from `ANLR Examples` module.
-1. [CK Compiler SRC](/compiler-examples/ck-compiler)
+1. [CK Compiler src](/compiler-examples/ck-compiler)
 2. [ASM Code Generation](https://github.com/arjunsk/java-bytecode/tree/master/java-asm/ow2-asm-example/src/main/java/com/arjunsk/asm/asmifier) 
 
 ### Parser Examples
