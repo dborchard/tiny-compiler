@@ -2,7 +2,6 @@ package com.arjunsk.compiler.ck.parser;
 
 import com.arjunsk.compiler.ck.domain.tree.ParseTree;
 import com.arjunsk.compiler.ck.lexer.Lexer;
-import com.arjunsk.compiler.ck.visitor.impl.SimplerLangCustomVisitor;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -11,14 +10,15 @@ public class ParserTest {
   @Test
   public void test_parseProgram() {
 
-    Lexer lexer = new Lexer("a = 10\n" + "show a\n" + "show 23");
+    // 1. Arrange
+    String sourceCode = "a = 10\n" + "show a\n" + "show 20";
+    Lexer lexer = new Lexer(sourceCode);
 
+    // 2. Act
     Parser parser = new Parser(lexer);
-
     ParseTree tree = parser.parseProgram();
-    SimplerLangCustomVisitor visitor = new SimplerLangCustomVisitor();
-    tree.accept(visitor);
 
+    // 3. Assert
     Assert.assertEquals(3, tree.getChildCount());
     Assert.assertEquals(1, tree.getChild(0).getChildCount()); // Statement
     Assert.assertEquals(2, tree.getChild(0).getChild(0).getChildCount()); // LET a=10

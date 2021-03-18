@@ -8,8 +8,14 @@ public class LexerTest {
 
   @Test
   public void test_nextToken() {
-    Lexer lexer = new Lexer("a = 10\n" + "show a");
 
+    // 1. Arrange
+    String sourceCode = "a = 10\n" + "show a";
+
+    // 2. Act
+    Lexer lexer = new Lexer(sourceCode);
+
+    // 3. Assert
     Assert.assertTrue(lexer.nextToken());
     Assert.assertEquals(TokenType.VARIABLE, lexer.getCurrentToken().getType());
     Assert.assertEquals("a", lexer.getCurrentToken().getValue());

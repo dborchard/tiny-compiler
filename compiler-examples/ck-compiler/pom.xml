@@ -12,5 +12,22 @@
 
   <artifactId>ck-compiler</artifactId>
 
+  <dependencies>
+
+    <!-- 1.1 ASM Library core for creating java-bytecode. -->
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm</artifactId>
+      <version>${ow2-asm.version}</version>
+    </dependency>
+
+    <!-- 1.2 ASM Library utils. -->
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm-util</artifactId>
+      <version>${ow2-asm.version}</version>
+    </dependency>
+
+  </dependencies>
 
 </project>

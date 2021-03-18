@@ -1,4 +1,4 @@
-package com.arjunsk.compiler.ck.visitor.impl;
+package com.arjunsk.compiler.ck.visitor.consoleprinter;
 
 import com.arjunsk.compiler.ck.domain.tree.nodes.grammer.impl.LetContext;
 import com.arjunsk.compiler.ck.domain.tree.nodes.grammer.impl.ShowContext;
@@ -11,11 +11,11 @@ import java.util.Map;
  *
  * <p>NOTE: Here we write the logic for storing the `let` variable and displaying the `show` result.
  */
-public class SimplerLangCustomVisitor extends SimplerLangBaseVisitor<Void> {
+public class ConsolePrinterVisitor extends SimplerLangBaseVisitor<Void> {
 
   private final Map<String, String> variableMap;
 
-  public SimplerLangCustomVisitor() {
+  public ConsolePrinterVisitor() {
     super();
     variableMap = new HashMap<>();
   }

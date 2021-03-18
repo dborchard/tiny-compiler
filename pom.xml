@@ -26,6 +26,7 @@
     <javaparser-symbol-solver-core.version>3.20.0</javaparser-symbol-solver-core.version>
     <org.eclipse.jdt.core.version>3.24.0</org.eclipse.jdt.core.version>
     <antlr4.version>4.9.2</antlr4.version>
+    <ow2-asm.version>6.0</ow2-asm.version>
 
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
   </properties>

@@ -19,8 +19,9 @@ This compiler was developed ground up as a part of learning. This is adapted fro
 2. Parsing [Done]
 3. Semantic Analyser [TODO]
 4. Optimization [Optional]
-5. Code Generation [TODO]
+5. Code Generation [Done]
 ```
+1. [ASM Code Generation](https://github.com/arjunsk/java-bytecode) 
 
 ### Parser Examples
 
