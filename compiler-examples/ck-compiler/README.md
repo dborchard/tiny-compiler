@@ -8,6 +8,21 @@ post ["Build your own programming language with ANTLR"](https://shalithasuranga.
 3. Look for the `output/CgSample.class` generated under root.
 4. To see the source code of `CgSample.class`, use IntelliJ decompiler.
 
+### Grammar
+```antlrv4
+grammar simplerlang;
+
+program : statement+;
+statement : let | show ;
+
+let : VAR '=' INT ;
+show : 'show' (INT | VAR) ;
+
+VAR : [a-z]+ ;
+INT : [0–9]+ ;
+WS : [ \n\t]+ -> skip;
+```
+
 ### Features
 1. Used a simple grammar to focus more on `compiler phases` rather than `language support`.
 2. Took `ANTLR` generated code as a reference.
