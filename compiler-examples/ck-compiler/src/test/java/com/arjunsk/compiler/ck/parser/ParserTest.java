@@ -8,7 +8,7 @@ import org.junit.Test;
 public class ParserTest {
 
   @Test
-  public void test_parseProgram() {
+  public void test_parser() {
 
     // 1. Arrange
     String sourceCode = "a = 10\n" + "show a\n" + "show 20";
