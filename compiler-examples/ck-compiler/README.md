@@ -26,8 +26,8 @@ WS : [ \n\t]+ -> skip;
 ### Features
 1. Used a simple grammar to focus more on `compiler phases` rather than `language support`.
 2. Took `ANTLR` generated code as a reference.
-2. Implemented [Parse Tree](src/main/java/com/arjunsk/compiler/ck/domain/tree).
-3. Implemented `Visitor` & `Vistable`.
+2. Implemented [Parse Tree](src/main/java/com/arjunsk/compiler/ck/domain/tree/ParseTree.java).
+3. Implemented [Visitor](src/main/java/com/arjunsk/compiler/ck/visitor/Visitor.java) & [Visitable](src/main/java/com/arjunsk/compiler/ck/domain/tree/Visitable.java).
 4. Implemented [CodeGeneration](src/main/java/com/arjunsk/compiler/ck/visitor/codegenerator/CodeGeneratorVisitor.java) using `Java ASM`.
 5. Implemented [Interpreter](src/main/java/com/arjunsk/compiler/ck/visitor/interpreter/InterpreterVisitor.java) & [Semantic Analyzer](src/main/java/com/arjunsk/compiler/ck/visitor/semantic/SemanticAnalyzer.java).
 
