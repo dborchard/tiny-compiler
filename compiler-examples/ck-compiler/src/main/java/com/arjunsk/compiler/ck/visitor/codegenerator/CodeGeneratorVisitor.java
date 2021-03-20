@@ -26,11 +26,13 @@ import org.objectweb.asm.Type;
 /**
  * Visitor that converts AST to .class java byte code.
  *
- * <p>NOTE: To generate ASM code from Java Class you can use ASMifier. This will help you write
- * complex ASM codes. Ref:-
- * https://github.com/arjunsk/java-bytecode/tree/master/java-asm/ow2-asm-example/src/main/java/com/arjunsk/asm/asmifier
+ * <p>NOTE 1: To generate ASM code from Java Class you can use ASMifier. This will help you write
+ * complex ASM codes. Ref:- @see <a
+ * href="https://github.com/arjunsk/java-bytecode/tree/master/java-asm/ow2-asm-example/src/main/java/com/arjunsk/asm/asmifier">Java
+ * ASMifier</a>
  *
- * <p>NOTE 2: Ops Code reference: https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-6.html
+ * <p>NOTE 2: Ops Code reference: @see <a
+ * href="https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-6.html">Java Ops Code</a>
  */
 public class CodeGeneratorVisitor extends SimplerLangBaseVisitor<Void> {
 
