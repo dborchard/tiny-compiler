@@ -7,8 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * SimplerLang Interpreter Implementation. Ideal interpreter executes compiled code line by line.
- * Here we are executing the code line by line, before compiling to byte code.
+ * SimplerLang Interpreter Implementation. Interpreter executes code line by line.
  *
  * <p>NOTE: Here we write the logic for storing the `let` variable and displaying the `show` result.
  */
