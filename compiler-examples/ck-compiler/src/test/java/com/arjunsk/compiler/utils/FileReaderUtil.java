@@ -1,4 +1,4 @@
-package com.arjunsk.compiler.ck.utils;
+package com.arjunsk.compiler.utils;
 
 import java.io.BufferedReader;
 import java.io.InputStream;

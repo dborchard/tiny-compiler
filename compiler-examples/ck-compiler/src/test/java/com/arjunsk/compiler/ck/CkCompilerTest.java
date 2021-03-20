@@ -3,9 +3,9 @@ package com.arjunsk.compiler.ck;
 import com.arjunsk.compiler.ck.domain.tree.ParseTree;
 import com.arjunsk.compiler.ck.lexer.Lexer;
 import com.arjunsk.compiler.ck.parser.Parser;
-import com.arjunsk.compiler.ck.utils.FileReaderUtil;
 import com.arjunsk.compiler.ck.visitor.codegenerator.CodeGeneratorVisitor;
-import com.arjunsk.compiler.ck.visitor.consoleprinter.ConsolePrinterVisitor;
+import com.arjunsk.compiler.ck.visitor.interpreter.InterpreterVisitor;
+import com.arjunsk.compiler.utils.FileReaderUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -26,8 +26,8 @@ public class CkCompilerTest {
 
     Assert.assertNotNull(tree);
 
-    // 4.1 Console Print Visitor
-    tree.accept(new ConsolePrinterVisitor());
+    // 4.1 Interpreter Visitor
+    tree.accept(new InterpreterVisitor());
 
     // 4.2 Compiler Visitor
     tree.accept(new CodeGeneratorVisitor());

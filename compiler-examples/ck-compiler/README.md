@@ -29,10 +29,11 @@ WS : [ \n\t]+ -> skip;
 2. Implemented `Parse Tree`.
 3. Implemented `Visitor` & `Vistable`.
 4. Implemented `CodeGeneration` using `Java ASM`.
+5. Implemented `Interpreter`.
 
 ### TODO
 * Implement Semantic Analyser.
-* Implement custom filename.
+* ~~Implement custom filename.(Unsupported)~~
 * ~~Implement Parse Tree.~~
 * ~~Implement Visitor Pattern.~~
 * ~~Implement byte code generation~~

@@ -1,4 +1,4 @@
-package com.arjunsk.compiler.ck.visitor.consoleprinter;
+package com.arjunsk.compiler.ck.visitor.interpreter;
 
 import com.arjunsk.compiler.ck.domain.tree.nodes.grammer.impl.LetContext;
 import com.arjunsk.compiler.ck.domain.tree.nodes.grammer.impl.ShowContext;
@@ -7,15 +7,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * SimplerLang Custom Visitor Implementation.
+ * SimplerLang Interpreter Implementation. Ideal interpreter executes compiled code line by line.
+ * Here we are executing the code line by line, before compiling to byte code.
  *
  * <p>NOTE: Here we write the logic for storing the `let` variable and displaying the `show` result.
  */
-public class ConsolePrinterVisitor extends SimplerLangBaseVisitor<Void> {
+public class InterpreterVisitor extends SimplerLangBaseVisitor<Void> {
 
   private final Map<String, String> variableMap;
 
-  public ConsolePrinterVisitor() {
+  public InterpreterVisitor() {
     super();
     variableMap = new HashMap<>();
   }
