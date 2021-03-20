@@ -7,7 +7,7 @@ import org.junit.Test;
 public class LexerTest {
 
   @Test
-  public void test_nextToken() {
+  public void test_tokenizer() {
 
     // 1. Arrange
     String sourceCode = "a = 10\n" + "show a";

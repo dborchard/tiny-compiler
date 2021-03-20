@@ -29,23 +29,29 @@ WS : [ \n\t]+ -> skip;
 2. Implemented `Parse Tree`.
 3. Implemented `Visitor` & `Vistable`.
 4. Implemented `CodeGeneration` using `Java ASM`.
+5. Implemented `Interpreter` & `Semantic Analyzer`.
 
 ### TODO
-* Implement Semantic Analyser.
-* Implement custom filename.
+* ~~Implement Semantic Analyser.~~
+* ~~Implement custom filename.(Unsupported)~~
 * ~~Implement Parse Tree.~~
 * ~~Implement Visitor Pattern.~~
 * ~~Implement byte code generation~~
 
-### Phases of Compiler
+### Compiler Phases
 1. Lexical Analysis [Done]
-2. Parsing [Done]
-3. Semantic Analyser [TODO]
-4. Optimization [Optional]
+2. Syntactic Analysis (ie Parsing) [Done]
+3. Semantic analysis [Done] & Intermediate Code Generation [NA]
+4. Optimization (optional)
 5. Code Generation [Done]
+
+Intermediate Code Generation: code gets converted to independent intermediate code. We are not doing this in `ck-compiler`. 
+We could use `LLVM` as Backend for implementing this feature. 
 
 ### Reference:
 1. [Java ASM](https://github.com/arjunsk/java-bytecode/tree/master/java-asm/ow2-asm-example/src/main/java/com/arjunsk/asm/asmifier)
 2. [Ops Code](https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-6.html)
+3. [Lecture Note](https://www.radford.edu/~nokie/classes/380/phases.html)
+4. [LLVM Backend](https://llvm.org/docs/WritingAnLLVMBackend.html)
 
 > Do check out other modules in this project for better understanding.️

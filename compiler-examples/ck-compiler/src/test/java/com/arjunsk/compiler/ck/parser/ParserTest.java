@@ -8,7 +8,7 @@ import org.junit.Test;
 public class ParserTest {
 
   @Test
-  public void test_parseProgram() {
+  public void test_parser() {
 
     // 1. Arrange
     String sourceCode = "a = 10\n" + "show a\n" + "show 20";
@@ -29,6 +29,8 @@ public class ParserTest {
     Assert.assertEquals(1, tree.getChild(2).getChildCount()); // Statement
     Assert.assertEquals(1, tree.getChild(2).getChild(0).getChildCount()); // SHOW show 23
 
-    System.out.println(tree.toStringTree());
+    Assert.assertEquals(
+        "( ProgramContext( ( StatementContext( ( LetContext( a  10 ) ) ) )  ( StatementContext( ( ShowContext( a ) ) ) )  ( StatementContext( ( ShowContext( 20 ) ) ) ) ) )",
+        tree.toStringTree());
   }
 }

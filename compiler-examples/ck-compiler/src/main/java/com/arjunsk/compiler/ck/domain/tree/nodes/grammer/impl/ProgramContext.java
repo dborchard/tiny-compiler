@@ -8,6 +8,13 @@ import java.util.List;
  * `Program` Semantics ParseRuleContext.
  *
  * <p>Eg:- Statement+ // ie program consists of multiple statements.
+ *
+ * <p>NOTE: This is a simple compiler. Ideally we should be having the `package name` and `Class
+ * Name` as part of ProgramContext. This `package name` and `Class Name` could be later used in
+ * {@link
+ * com.arjunsk.compiler.ck.visitor.codegenerator.CodeGeneratorVisitor#visitProgram(ProgramContext)}
+ * to write the corresponding `.class` in the correct `target package` with the correct `class
+ * name`.
  */
 public class ProgramContext extends ParserRuleContext {
 
