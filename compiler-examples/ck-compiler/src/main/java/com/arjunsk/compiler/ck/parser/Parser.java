@@ -33,7 +33,7 @@ public class Parser {
     return new ProgramContext(statements);
   }
 
-  /** Parse Logic for Statement. */
+  /** Parse Logic for Statement. Creates a LET or SHOW statement based on the Tokens passed. */
   public StatementContext parseStatement() {
 
     if (lexer.getCurrentToken() == null) {

@@ -21,6 +21,11 @@ public class Lexer {
     this.codeLength = code.length();
   }
 
+  /**
+   * Updates currentToken to the next valid Token if it is available.
+   *
+   * @return true, if a valid token is available next.
+   */
   public boolean nextToken() {
 
     while (!isEndOfCode()) { // while loop is to fetch nextToken, if a skipWS occurs.
