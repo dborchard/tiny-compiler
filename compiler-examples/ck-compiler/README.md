@@ -1,6 +1,5 @@
 ## CK Compiler
-This is a project I created for learning internals of compilers. The `SimplerLang` grammar is taken from the
-post ["Build your own programming language with ANTLR"](https://shalithasuranga.medium.com/build-your-own-programming-language-with-antlr-5201955537a5) 
+This is a project I created for learning internals of compilers. The `SimplerLang` grammar is taken from [this](https://shalithasuranga.medium.com/build-your-own-programming-language-with-antlr-5201955537a5) post. 
 
 ### To compile `.ck` to `.class`
 1. Open [CompilerTest.java](src/test/java/com/arjunsk/compiler/ck/CkCompilerTest.java)
