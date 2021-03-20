@@ -48,7 +48,7 @@ public class CodeGeneratorVisitor extends SimplerLangBaseVisitor<Void> {
     this.classWriter = new ClassWriter(0);
     variableIndexMap = new HashMap<>();
 
-    // Variable Zero would be already take by :  `main(String[] var0)`
+    // Variable0 is reserved for args[] in :  `main(String[] var0)`
     variableIndex = 1;
   }
 
