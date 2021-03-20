@@ -9,6 +9,13 @@ import com.arjunsk.compiler.ck.visitor.SimplerLangBaseVisitor;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * `Syntax` is the concept that concerns itself only whether or not the sentence is valid for the
+ * grammar of the language. `Semantics` is about whether or not the sentence has a valid meaning.
+ *
+ * <p>NOTE: checking whether the variable is declared before "SHOW VAR" is an example of `Semantic`
+ * check.
+ */
 public class SemanticAnalyzer extends SimplerLangBaseVisitor<Void> {
 
   private final Map<String, String> variableMap;

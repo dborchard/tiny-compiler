@@ -4,7 +4,7 @@ import com.arjunsk.compiler.ck.domain.tree.nodes.grammer.ParserRuleContext;
 import com.arjunsk.compiler.ck.visitor.Visitor;
 
 /**
- * `Statement` Semantics ParseRuleContext.
+ * `Statement` Syntax ParseRuleContext.
  *
  * <p>Eg:- LET | SHOW // ie either Let or Show statement would be the value of statement.
  */

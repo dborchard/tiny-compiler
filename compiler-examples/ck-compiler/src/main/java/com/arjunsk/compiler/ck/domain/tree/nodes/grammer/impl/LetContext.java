@@ -5,7 +5,7 @@ import com.arjunsk.compiler.ck.domain.tree.nodes.grammer.ParserRuleContext;
 import com.arjunsk.compiler.ck.visitor.Visitor;
 
 /**
- * `Let` Semantics ParseRuleContext.
+ * `Let` Syntax ParseRuleContext.
  *
  * <p>Eg:- a = 10 ( VAR = INT)
  */

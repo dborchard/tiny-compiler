@@ -5,7 +5,7 @@ import com.arjunsk.compiler.ck.visitor.Visitor;
 import java.util.List;
 
 /**
- * `Program` Semantics ParseRuleContext.
+ * `Program` Syntax ParseRuleContext.
  *
  * <p>Eg:- Statement+ // ie program consists of multiple statements.
  *
