@@ -5,7 +5,7 @@ import com.arjunsk.compiler.ck.visitor.Visitor;
 import java.util.ArrayList;
 import java.util.List;
 
-/** Base implementation of Type of semantics in our Grammar. */
+/** Base implementation for our Grammar Elements. */
 public class ParserRuleContext implements ParseTree {
 
   public ParseTree parent;
