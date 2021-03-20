@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * SimplerLang Interpreter Implementation. Interpreter executes code line by line.
  *
- * <p>NOTE: Here we write the logic for storing the `let` variable and displaying the `show` result.
+ * <p>NOTE: Here we write the logic for storing the `let` variable and displaying the `show` output.
  */
 public class InterpreterVisitor extends SimplerLangBaseVisitor<Void> {
 
