@@ -11,6 +11,15 @@
   </parent>
 
   <artifactId>ck-compiler</artifactId>
+  <description>Codekrypt Compiler</description>
+
+  <developers>
+    <developer>
+      <id>arjunsk</id>
+      <name>Arjun SK</name>
+      <url>https://github.com/arjunsk</url>
+    </developer>
+  </developers>
 
   <dependencies>
 
