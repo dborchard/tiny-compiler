@@ -5,17 +5,18 @@ This repo contains sub modules which helped me understand compilers better.
 
 ### Compiler Examples
 
-#### SVG Compiler
-1. [Web App](https://kosamari.github.io/sbn/)
-2. [Medium Article](https://medium.com/@kosamari/how-to-be-a-compiler-make-a-compiler-with-javascript-4a8a13d473b4)
-
-#### LISP Compiler (on hold)
-1. [Github](https://github.com/jamiebuilds/the-super-tiny-compiler/blob/master/the-super-tiny-compiler.js)
-
 #### CK(Codekrypt) Compiler
 This compiler was developed ground up as a part of learning. This is adapted from `ANLR Examples` module.
 1. [CK Compiler src](/compiler-examples/ck-compiler)
 2. [ASM Code Generation](https://github.com/arjunsk/java-bytecode/tree/master/java-asm/ow2-asm-example/src/main/java/com/arjunsk/asm/asmifier) 
+
+#### SVG Compiler (needs review)
+1. [Web App](https://kosamari.github.io/sbn/)
+2. [Medium Article](https://medium.com/@kosamari/how-to-be-a-compiler-make-a-compiler-with-javascript-4a8a13d473b4)
+
+#### LISP Compiler (on hold)
+Trying to port [Tiny-Compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) to Java.
+1. [Github](https://github.com/jamiebuilds/the-super-tiny-compiler/blob/master/the-super-tiny-compiler.js)
 
 ### Parser Examples
 
@@ -27,6 +28,7 @@ This compiler was developed ground up as a part of learning. This is adapted fro
 1. [StackOverflow](https://stackoverflow.com/questions/58611706/javaparser-parsing-and-generating-java-code)
 
 #### JDT Example
+Functions similar to what is provided by Eclipse IDE. (project, workspace, code)
 1. [ProgramCreek](https://www.programcreek.com/2011/01/best-java-development-tooling-jdt-and-astparser-tutorials/)
 
 
